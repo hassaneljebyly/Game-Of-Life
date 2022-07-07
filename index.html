@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer type="module"></script>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      canvas {
+        background-color: #fdf4eb;
+        color: #7e7e7e;
+        border: 1px solid #191919;
+        margin: 1em auto;
+        cursor: none;
+      }
+      div {
+        margin: 1em auto;
+        width: fit-content;
+        position: relative;
+      }
+      button {
+        display: block;
+      }
+      .zoom-canvas {
+        border-radius: 50%;
+        position: absolute;
+        pointer-events: none;
+        transform: translateY(-100%) translateX(50%);
+      }
+      h1,
+      h2 {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <canvas height="600" width="600" id="canvas"></canvas>
+      <div id="square"></div>
+    </div>
+    <!-- <canvas class="zoom-canvas" id="zoom-canvas" height="100" width="100"> </canvas> -->
+    <button id="startGame">Start Game</button>
+    <br />
+    <button id="erase">ERASE</button>
+    <br />
+    <h1>work under progress</h1>
+    <h2>refresh page when canavas is clear or to draw again</h2>
+    <!-- <button id="zoom">zoom</button> -->
+  </body>
+</html>
